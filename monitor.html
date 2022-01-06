@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calories Tracker</title>
+
+    <!-- Compiled and minified CSS -->
+    <head>
+      <link rel="stylesheet" href="monitor.css" />
+    </head>
+
+  <body>
+    <h1>Calorie Tracker</h1>
+
+    <form>
+      <div id="calories">
+        <div id="calories-available">2000</div> - <div id="calories-used">0</div> = <div id="calories-left">2000</div>
+      </div>
+      <label for="breakfast">Meal</label>
+      <input id="meal" type="text" name="meal">
+      <br>
+      <label for="lunch">Lunch</label>
+      <input id="lunch" type="text" name="lunch" value="0">
+      <div id="submit-button-wrapper">
+        <button id="update-btn">Update</button>
+      </div>
+    </form>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+    <script src="monitor.js"></script>
+  </body>
+</html>
