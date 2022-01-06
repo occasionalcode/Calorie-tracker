@@ -1,80 +1,142 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
+html {
+  background: url("https://tse4.mm.bing.net/th?id=OIP.RFdlEjTrl2p-Pym0fAPFTQHaEo&pid=Api&P=0&w=296&h=185");
 
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.flex-track {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
 body {
-  font-family: "Quicksand", sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  flex-direction: column;
+}
+.flex-clearbutton {
+  display: flex;
+  justify-content: left;
+  align-content: center;
+  flex-direction: row-reverse;
+  /* width: ; */
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+.flex-container h1 {
+  display: flex;
+  font-family: "Roboto Condensed", sans-serif;
+  justify-content: center;
+  align-content: center;
+  color: black;
+  font-size: 50px;
+  font-weight: bolder;
+  background-color: aliceblue;
+  width: 100%;
+  border-radius: 15px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  background-color: aliceblue;
+  height: 500px;
+  width: 1400px;
+  flex-direction: column;
+  position: static;
+  border-radius: 20px;
+}
+.flex-category {
+  display: flex;
+  justify-content: left;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 30px;
+  width: 500px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-meal-input {
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column-reverse;
+  height: 50px;
+}
+.flex-cal-input {
+  display: flex;
+  justify-content: left;
+
+  flex-direction: column-reverse;
+  height: 50px;
+  margin-left: 15px;
+}
+#item-name {
+  height: 50px;
+  width: 600px;
 }
 
-h1 {
-  font-size: 40px;
-  margin: 30px 0 10px 0;
-  text-align: center;
+#item-calories {
+  height: 50px;
+  width: 600px;
+}
+.col {
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+}
+.card {
+  display: flex;
+  justify-content: center;
+}
+.flex-total-calories {
+  display: flex;
+  justify-content: left;
+  align-content: center;
+  margin: 15px;
+  margin-left: 85px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.flex-collection {
+  display: flex;
+  justify-content: left;
+  align-content: center;
+  /* margin: 0px 40px 0px 0px; */
+  margin-left: 100px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.flex-clearbutton button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 130px;
+  margin-left: 90px;
+  margin-bottom: 15px;
+  /* margin-top: 10px; */
+}
+ul {
+  list-style-type: none;
+}
+.flex-meal {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 20px;
 }
 
-form {
-  background-color: #f7f7f7;
-  border-radius: 10px;
-  box-shadow: 0 5px 10px 2px grey;
-  left: 50%;
-  padding: 25px;
-  position: absolute;
-  transform: translateX(-50%);
-}
-
-label {
-  display: inline-block;
-  width: 150px;
-}
-
-input {
-  height: 34.4px;
-  width: 150px;
-}
-
-input[type="text"] {
-  border-radius: 5px;
-  font-size: 25px;
-  text-align: center;
-}
-
-input[name="lunch"] {
-  margin: 60px 0;
-}
-
-#update-btn {
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 20px;
-  height: 28px;
-  margin-top: 25px;
-  padding: 0 10px;
-}
-
-#submit-button-wrapper {
-  text-align: center;
-}
-
-#calories {
-  background-color: #fff;
-  border: 1px solid black;
-  border-radius: 5px;
-  cursor: default;
-  margin-bottom: 25px;
-  padding: 3px;
-  text-align: center;
-}
-
-#calories-available,
-#calories-used,
-#calories-left {
-  border-bottom: 1px solid black;
-  cursor: default;
-  display: inline-block;
-  font-family: monospace;
-  position: relative;
-  width: 65.987px;
+.total-cal {
+  margin-left: 89px;
 }

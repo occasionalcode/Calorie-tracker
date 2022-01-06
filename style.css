@@ -102,9 +102,10 @@ body {
   /* flex-direction: column; */
 }
 .col-sm-10 {
+  display: flex;
   padding-top: 15.5px;
   display: flex;
-  flex-direction: space-between;
+  justify-content: space-between;
 }
 #loading img {
   display: flex;
@@ -133,4 +134,9 @@ h5 {
 .flex-container:hover {
   transform: scale(1.05);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+}
+.flex-meal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
