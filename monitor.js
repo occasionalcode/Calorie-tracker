@@ -149,7 +149,7 @@ const UICrtl = (function () {
     clearBtn: ".clear-btn",
     itemNameInput: "#item-name",
     itemCaloriesInput: "#item-calories",
-    totalCalories: ".total-calories",
+    totalCalories: "#total-calories",
   };
 
   // public method
@@ -440,6 +440,11 @@ const App = (function (ItemCtrl, StorageCtrl, UICrtl) {
     },
   };
 })(ItemCtrl, StorageCtrl, UICrtl);
+window.onload = function () {
+  document.getElementById("total-calories").innerHTML = 0;
+  const items = document.getElementById("item-list");
+  items.innerHTML = "";
+};
 
 //Initilizing App
 App.init();
